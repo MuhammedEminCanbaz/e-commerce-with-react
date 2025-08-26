@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "743284",
+      "username": "emin",
+      "password": "18",
+      "balance": 1000
+    },
+    {
+      "id": "700069",
+      "username": "beyza",
+      "password": "18",
+      "balance": 1000
+    },
+    {
+      "id": "294810",
+      "username": "emin",
+      "password": "1",
+      "balance": 1000
+    }
+  ]
+}
