@@ -21,7 +21,6 @@ function Category() {
             dispatch(setLoading(true))
             const categories: string[] = await categoryService.getAllCategories()
             setCategories(categories)
-            console.log(categories)
         } catch (error) {
             toast.error("Kategori Listesi Alınırken Hata Oluştu" + error)
         }

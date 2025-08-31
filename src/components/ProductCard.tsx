@@ -7,12 +7,15 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 import type { ProductType } from '../types/Types'
+import { useNavigate } from 'react-router-dom';
 
 interface ProductCardProps {
     product: ProductType
 }
 
 function ProductCard(props: ProductCardProps) {
+
+    const navigate = useNavigate()
 
     const { id, title, price, description, category, image, rating } = props.product;
 
@@ -31,7 +34,7 @@ function ProductCard(props: ProductCardProps) {
                 <h2>{price}$</h2>
             </div>
             <CardActions>
-                <Button size="small" variant='outlined' color='info'>Detay</Button>
+                <Button onClick={() => navigate("product-detail/" + id)} size="small" variant='outlined' color='info'>Detay</Button>
             </CardActions>
         </Card>
     )
